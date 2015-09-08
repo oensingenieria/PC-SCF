@@ -2,6 +2,8 @@
 
 * Clonar el repositorio -> git clone url.
 * Actualizar desde la ruta del proyecto las dependencias -> composer update
+* Crear esquema de BD y usuario según la información del archivo env.
+* Usar php artisan migrate y php artisan db:seed para poblar la DB
 * Ejecutar con php artisan serve para confirmar el correcto funcionamiento del proyecto.
 
 ## Laravel PHP Framework
