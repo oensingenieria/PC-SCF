@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMoldeTable extends Migration {
+class CreateMaterialesTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,12 @@ class CreateMoldeTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('molde', function(Blueprint $table)
+		Schema::create('materiales', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('Nombre_Molde');
-			$table->decimal('Peso_Molde');
-			$table->decimal('Volumen_Molde', 8, 3);
+			$table->string('Codigo_Material');
+			$table->string('nombre_material');
+			$table->string('unidad');
 			$table->timestamps();
 		});
 	}
@@ -29,7 +29,7 @@ class CreateMoldeTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('molde');
+		Schema::drop('materiales');
 	}
 
 }

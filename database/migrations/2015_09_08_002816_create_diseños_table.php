@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateMoldeTable extends Migration {
+class CreateDiseñosTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,12 +12,15 @@ class CreateMoldeTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('molde', function(Blueprint $table)
+		Schema::create('diseños', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('Nombre_Molde');
-			$table->decimal('Peso_Molde');
-			$table->decimal('Volumen_Molde', 8, 3);
+			$table->string('codigo');
+			$table->string('nombre');
+			$table->string('resistencia_inicial');
+			$table->string('resistencia_final');
+			$table->string('acronimo');
+			$table->string('equivalencia');
 			$table->timestamps();
 		});
 	}
@@ -29,7 +32,7 @@ class CreateMoldeTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('molde');
+		Schema::drop('diseños');
 	}
 
 }

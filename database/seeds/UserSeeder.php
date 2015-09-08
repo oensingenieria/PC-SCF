@@ -25,7 +25,7 @@ class UserSeeder extends Seeder  {
 
           'username' => 'PPP-MMU71' ,
           'email' => 'marvin.murillo@pc.cr' ,
-          'password' => \Hash::make('17221')
+          'password' => \Hash::make('22171')
          
         ));
 

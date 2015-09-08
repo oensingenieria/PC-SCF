@@ -21,7 +21,7 @@ class MoldeSeeder extends Seeder  {
 
       	));
 
-
+/*
    	\DB::table('molde')->insert(array(
 
           'Nombre_Molde' => 'Molde #2' ,
@@ -61,7 +61,7 @@ class MoldeSeeder extends Seeder  {
           'Volumen_Molde' => 0.654
 
       	));
-
+*/
    
 	}
 }
