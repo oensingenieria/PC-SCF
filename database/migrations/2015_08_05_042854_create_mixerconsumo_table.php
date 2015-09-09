@@ -38,12 +38,12 @@ class CreateMixerconsumoTable extends Migration {
 			$table->string('Nombre_Elemento');
 			$table->date('Fecha_de_Carga');
 			$table->time('Hora_de_Carga');
-			$table->decimal('Volumen_de_Carga');
+			$table->decimal('Volumen_de_Carga',8,3);
 			$table->string('Boleta_Batida');
 			$table->time('Hora_Inicio_Batida');
 			$table->time('Hora_Descarga_Batida');
 			$table->integer('Tiempo_Mezclado');
-			$table->decimal('Humedad_Mezcla');
+			$table->decimal('Humedad_Mezcla',8,3);
 
 
 			$table->timestamps();
